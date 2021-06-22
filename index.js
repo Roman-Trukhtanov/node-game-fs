@@ -6,6 +6,7 @@ const readline = require('readline');
 const util = require('util');
 const appendFileAsync = util.promisify(fs.appendFile);
 const writeFileAsync = util.promisify(fs.writeFile);
+const constants = require('./const');
 
 // ARGV
 const yargs = require('yargs/yargs');
@@ -13,9 +14,6 @@ const { hideBin } = require('yargs/helpers');
 const argv = yargs(hideBin(process.argv)).argv;
 
 const fileName = argv._[0];
-
-const WIN_STATUS = 1;
-const LOSE_STATUS = 0;
 
 const randomInt = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -81,7 +79,7 @@ class HeadsOrTails {
   appendResultsToLog(userAnswer) {
     const currentDate = new Date().toISOString();
     const gameStatusText = `GAME_STATUS=${
-      this.isWin ? WIN_STATUS : LOSE_STATUS
+      this.isWin ? constants.WIN_STATUS : constants.LOSE_STATUS
     }`;
     const userAnswerText = `USER_ANSWER=${userAnswer}`;
 
