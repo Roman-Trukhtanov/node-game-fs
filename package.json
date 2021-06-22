@@ -1,0 +1,19 @@
+{
+  "name": "node-game-fs",
+  "version": "1.0.0",
+  "description": "game-fs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roman-Trukhtanov/node-game-fs.git"
+  },
+  "author": "roman_trukhtanov <roman_trukhtanov@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roman-Trukhtanov/node-game-fs/issues"
+  },
+  "homepage": "https://github.com/Roman-Trukhtanov/node-game-fs#readme"
+}
