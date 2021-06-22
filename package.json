@@ -12,8 +12,14 @@
   },
   "author": "roman_trukhtanov <roman_trukhtanov@gmail.com>",
   "license": "ISC",
+  "bin": {
+    "node-game-fs": "index.js"
+  },
   "bugs": {
     "url": "https://github.com/Roman-Trukhtanov/node-game-fs/issues"
   },
-  "homepage": "https://github.com/Roman-Trukhtanov/node-game-fs#readme"
+  "homepage": "https://github.com/Roman-Trukhtanov/node-game-fs#readme",
+  "dependencies": {
+    "yargs": "17.0.1"
+  }
 }
